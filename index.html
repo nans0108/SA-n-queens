@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/p5.js"></script>
+		<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/addons/p5.dom.js"></script>
+		<script type="text/javascript" language="javascript" src="minconflict.js"></script>
+		<script type="text/javascript" language="javascript" src="graphics.js"></script>
+
+		<style>
+		body {
+			background-color: rgb(35, 35, 35);
+			font-family: verdana;
+			color: rgb(175, 175, 175);
+		}
+		#err {
+			color: red;
+		}
+		#inputText {
+			font-size: 14px;
+		}
+		#n {
+			margin-top: 15px;
+			background-color: rgb(100, 100, 100);
+			border-color: rgb(50, 50, 50);
+		}
+		#run, #showAll {
+			color: white;
+			font-size: 14px;
+			background-color: rgb(70, 70, 70);
+			border: none;
+			margin: 5px;
+			width: 100px;
+			height: 30px;
+		}
+		#showAll {
+			width: 170px;
+		}
+		#currentN {
+			margin: 5px;
+		}
+		#stats {
+			font-size: 11px;
+			margin-top: 20px;
+		}
+		#conflicts {
+		}
+		</style>
+	</head>
+	<body>
+		<button id="run">Run</button><br>
+		<span id="inputText">N: </span><input id="n" type="text" size="7"><span id="currentN">8</span>
+
+		<div id="stats">
+			<div id="descrip"></div><br>
+			<div id="conflicts"></div>
+
+		</div>
+	</body>
+</html>
